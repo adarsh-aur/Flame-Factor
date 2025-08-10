@@ -1,8 +1,3 @@
-wn that will display correctly when you paste it into a README.md file for your project:
-
-markdown
-Copy
-Edit
 # 🔥 Flame Factor – Love Compatibility Calculator
 
 **Flame Factor** is a light-hearted web-based compatibility calculator designed to estimate the romantic potential between two individuals. Using a fun and playful approach, users can input their names and receive a randomized percentage score representing their "love compatibility."
