@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="p-3 text-dark" style="background-color: #640D5F">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <a class="logo d-flex align-items-center px-2 mb-2 mb-lg-0 text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" height="45" fill="gold" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+            </svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 text">Home</a></li>
+        <li><a href="#" class="nav-link px-2 text">Features</a></li>
+        <li><a href="#" class="nav-link px-2 text">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 text">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 text">About</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control form-control-dark text-bg-warning" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-success me-2 text-white">Login</button>
+        <button type="button" class="btn btn-success">Sign-up</button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+    <div class="px-4 pt-5 text-center border-bottom" style="background-color: #FFCC00;">
+        <h1 class="lc display-4 fw-bold ">Flame Factor</h1>
+  
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 fs-5 fw-bold text-success">
+                Discover your love compatibility with our fun and simple Love Calculator! Just enter your name and your partner’s name into the fields below, then click the Check Calculate % button. Our calculator will generate a playful percentage that estimates how strong your romantic connection might be. It’s a lighthearted way to see the potential between you two!
+            </p>
+    
+            <div class="container mb-5" id="inputForm">
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-2 mb-md-0">
+                    <input id="name1" type="text" class="form-control form-control-dark" placeholder="First Person's Name" aria-label="First Person's Name">
+                    </div>
+                    <div class="col-md-6">
+                    <input id="name2" type="text" class="form-control form-control-dark" placeholder="Second Person's Name" aria-label="Second Person's Name">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button id="checkBtn" type="button" class="btn btn-lg px-4 text" style="background-color: #640D5F;">Check Calculate %</button>
+                </div>
+                </div>
+
+                <!-- Result container, initially hidden -->
+                <div id="result" class="text-center" style="display:none; margin-top: 40px;">
+                <h2 class="fw-bold text-danger"></h2>
+                <button id="reloadBtn" class="btn btn-secondary mt-3 mb-3">Try Again</button>
+            </div>
+    </div>
+
+  <div class="overflow-hidden" style="max-height: 50vh;">
+    <div class="container px-5">
+      <img src="./hero-img.jpg" 
+           class="img-fluid border rounded-3 shadow-lg mb-4" 
+           alt="Love Bond Calculator" 
+           width="900" 
+           height="400" 
+           loading="lazy"
+           border-radius="20px">
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="container-fluid p-0">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 mx-0" style="background-color: #EB5B00;">
+    <div class="col mb-2">
+      <a  class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+        <svg xmlns="http://www.w3.org/2000/svg" height="45" fill="purple" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+        </svg>
+      </a>
+      <p class="text-body-secondary">Compatibility Calculator © 2025</p>
+    </div>
+    
+    <div class="col mb-2"></div>
+    
+    <div class="col mb-2">
+      <h5>Visit</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col mb-2">
+      <h5>Other Features</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script>
+        const checkBtn = document.getElementById('checkBtn');
+        const reloadBtn = document.getElementById('reloadBtn');
+        const resultDiv = document.getElementById('result');
+        const inputForm = document.getElementById('inputForm');
+
+        checkBtn.addEventListener('click', () => {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+
+            if (!name1 || !name2) {
+            alert("Please enter both names!");
+            return;
+            }
+
+            
+            let n = Math.floor(Math.random() * 100) + 1;
+
+            
+            inputForm.style.display = 'none';
+
+            resultDiv.querySelector('h2').textContent = `The chances of ${name1} and ${name2} falling in love is: ${n}%`;
+            resultDiv.style.display = 'block';
+
+            
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        reloadBtn.addEventListener('click', () => {
+            
+            window.location.reload();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

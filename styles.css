@@ -1,0 +1,14 @@
+.text {
+    color: lightpink;
+    size: 1fr;
+}
+
+.lc {
+    color: crimson;
+    font-family: display, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
